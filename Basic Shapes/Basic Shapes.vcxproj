@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="BasicShapes.cpp" />
     <ClCompile Include="BasicShapes.h" />
+    <ClCompile Include="Circle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />

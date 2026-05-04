@@ -14,11 +14,11 @@ public:
 
 	double getXcenter() const;
 	double getYcenter() const;
-	double getradius() const;
+	double getRadius() const;
 
-	void setXcenter() const;
-	void setYcenter() const;
-	void setradius() const;
+	void setXcenter(double x);
+	void setYcenter(double y);
+	void setradius(double r);
 
 	virtual void calcArea();
 };
