@@ -126,9 +126,11 @@
     <ClCompile Include="BasicShapes.cpp" />
     <ClCompile Include="BasicShapes.h" />
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Rectangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
