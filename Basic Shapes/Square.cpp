@@ -14,5 +14,5 @@ void Square::setSide(double s)
 	side = s;
 
 	setLength(s);
-	setWidth(s);
+	setWidth(s);			//triggers correct area calc since setWidth calls calcAreaw
 }

@@ -32,6 +32,7 @@ void Circle::setYcenter(double y)
 void Circle::setradius(double r)
 {
 	radius = r;
+	calcArea();
 }
 void Circle::calcArea()
 {
