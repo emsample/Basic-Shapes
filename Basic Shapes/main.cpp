@@ -6,13 +6,6 @@
 #include "Square.h"
 
 using namespace std;
-
-static void printShape(BasicShape* shape)
-{
-    cout << "Shape Name: " << shape->getName() << endl;
-    cout << "Shape Area: " << shape->getArea() << endl;
-    cout << endl;
-}
 int main()
 {
     cout << fixed << setprecision(2);
@@ -41,14 +34,14 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         shapes[i]->calcArea();
-        printShape(shapes[i]);
+        shapes[i]->print();
     }
 
     cout << "CIRCLE SETTER AND GETTER TESTS" << endl;
     cout << "------------------------------" << endl;
 
     cout << "Before radius change:" << endl;
-    printShape(&circle1);
+    circle1.print();
 
     circle1.setradius(10);
 
@@ -69,7 +62,7 @@ int main()
     cout << "---------------------------------" << endl;
 
     cout << "Before length and width changes:" << endl;
-    printShape(&rect1);
+    rect1.print();
 
     rect1.setLength(8);
 
@@ -89,7 +82,7 @@ int main()
     cout << "------------------------------" << endl;
 
     cout << "Before side change:" << endl;
-    printShape(&square1);
+    square1.print();
 
     square1.setSide(9);
 
@@ -107,7 +100,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        printShape(shapes[i]);
+        shapes[i]->print();
     }
 
     return 0;

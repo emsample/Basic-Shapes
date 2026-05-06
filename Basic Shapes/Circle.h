@@ -21,6 +21,7 @@ public:
 	void setradius(double r);
 
 	virtual void calcArea();
+	virtual void print() const;
 };
 
 #endif

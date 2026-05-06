@@ -1,4 +1,5 @@
 #include "Circle.h"
+#include <iostream>
 
 Circle::Circle(double x, double y, double r, string n)
 {
@@ -38,4 +39,12 @@ void Circle::calcArea()
 {
 	const double pi = 3.14159;
 	setArea(pi * radius * radius);
+}
+void Circle::print() const
+{
+	cout << "Shape Name: " << getName() << endl;
+	cout << "Shape Area: " << getArea() << endl;
+	cout << "xCenter: " << getXcenter() << endl;
+	cout << "yCenter: " << getYcenter() << endl;
+	cout << "Radius: " << getRadius() << endl << endl;
 }

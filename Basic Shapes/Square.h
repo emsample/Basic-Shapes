@@ -15,6 +15,8 @@ public:
 	double getSide() const;
 
 	void setSide(double s);
+
+	virtual void print() const;
 };
 
 #endif

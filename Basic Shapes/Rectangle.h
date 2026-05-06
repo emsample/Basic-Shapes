@@ -21,5 +21,6 @@ public:
 	void setWidth(double w);
 
 	virtual void calcArea();
+	virtual void print() const;
 };
 #endif // !RECTANGLE_H
