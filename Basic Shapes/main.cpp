@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void printShape(BasicShape* shape)
+static void printShape(BasicShape* shape)
 {
     cout << "Shape Name: " << shape->getName() << endl;
     cout << "Shape Area: " << shape->getArea() << endl;
